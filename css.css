@@ -1,0 +1,7 @@
+.card{
+    background-color: dimgrey;
+    transform: scale(1.5) scale(0.5);
+    transition: 1s linear;
+    width: 100px;
+    height: 100px;
+}

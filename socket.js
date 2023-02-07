@@ -1,3 +1,1 @@
-
-
-sock
+const socket = io()
