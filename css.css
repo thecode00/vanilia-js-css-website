@@ -1,7 +1,6 @@
 .card{
-    background-color: dimgrey;
-    transform: scale(1.5) scale(0.5);
-    transition: 1s linear;
-    width: 100px;
-    height: 100px;
+    background: lightblue;
+    width: 25rem;
+    /* 비율 지정 */
+    aspect-ratio: 1 / 1;
 }
