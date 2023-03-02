@@ -1,7 +1,26 @@
-.card{
-    background-color: dimgrey;
-    transform: scale(1.5) scale(0.5);
-    transition: 1s linear;
-    width: 100px;
-    height: 100px;
+/* 
+transform: 웹 요소를 변형시킴   ex. rotate, skew, scale... etc
+transition: 웹 요소의 스타일을 바꿈
+*/
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: dimgrey;
+  margin: 32px;
+}
+.card:hover {
+  animation: rotate 3s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: 90deg;
+  }
+  to {
+    transform: rotate(90deg);
+  }
 }
