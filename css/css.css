@@ -1,6 +1,10 @@
 /* 
 transform: 웹 요소를 변형시킴   ex. rotate, skew, scale... etc
 transition: 웹 요소의 스타일을 바꿈
+
+grid레이아웃은 px을 사용하면 크기가 고정되어 반응형 웹 디자인에는 적합하지 않기에 fr단위를 씀
+값이 반복될때는 repeat함수를 쓰면 간단하게 작성가능
+
 */
 
 .card {
@@ -15,12 +19,9 @@ transition: 웹 요소의 스타일을 바꿈
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: 90deg;
+    transform: rotateZ(0deg);
   }
   to {
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 }
