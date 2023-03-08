@@ -13,5 +13,41 @@ body {
   background: black;
   overflow: hidden;
 }
+/*
+user-select: 유저가 텍스트를 선택할수있게 하는 프로퍼티, 텍스트 드래그에 관한 설정 
+pointer-events: 포인터에 관한 이벤트설정 프로퍼티
+*/
 h2 {
+  color: white;
+  font-size: 14vw;
+  z-index: 100;
+  user-select: none;
+  pointer-events: none;
+  text-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+span {
+  position: absolute;
+  pointer-events: none;
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  5%,
+  95% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
 }
