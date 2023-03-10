@@ -8,6 +8,7 @@ grid레이아웃은 px을 사용하면 크기가 고정되어 반응형 웹 디�
 */
 body {
   margin: 16px;
+  display: flex;
 }
 
 .btn {
@@ -21,11 +22,7 @@ body {
   font-size: 2em;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(90deg);
-  }
+.css-box {
+  display: flex;
+  flex-direction: row;
 }
